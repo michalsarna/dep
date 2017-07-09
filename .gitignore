@@ -1,0 +1,10 @@
+bin
+local
+include
+lib
+share
+.Python
+.idea
+pip-selfcheck.json
+.pydevproject
+.project
