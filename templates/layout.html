@@ -1,0 +1,9 @@
+<!doctype html>
+<title>EXAMPLE TEST PAGE</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}" />
+<div class=page>
+  <h1>HELLO - THIS IS IT</h1>
+  <div class=metanav>
+      {% block body %}{% endblock %}
+  </div>
+</div>
