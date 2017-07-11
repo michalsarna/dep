@@ -1,0 +1,16 @@
+# example-1.py
+
+FROM ubuntu:16.04
+
+#We need to install python-pip
+RUN apt update && apt -y install python-pip
+
+ADD example-1.py /opt/example-1.py
+ADD requirements.txt /opt/requirements.txt
+
+RUN pip install --upgrade pip && pip install -U Flask
+
+VOLUME [ "/data" ]
+EXPOSE 5000
+
+CMD "/opt/example-1.py"
