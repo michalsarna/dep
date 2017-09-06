@@ -7,6 +7,8 @@ RUN apt update && apt -y install python-pip
 
 ADD example-1.py /opt/example-1.py
 ADD requirements.txt /opt/requirements.txt
+ADD static/ /opt/static/
+ADD templates/ /opt/templates/
 
 RUN pip install --upgrade pip && pip install -U Flask
 
